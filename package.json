@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build:library": "vue-cli-service build --target lib --name umd-component src/components/HelloWorld.vue",
+    "lint": "vue-cli-service lint",
+    "file-server": "http-server dist"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -21,6 +23,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
+    "http-server": "^14.1.0",
     "prettier": "^2.4.1",
     "vue-template-compiler": "^2.6.14"
   }
